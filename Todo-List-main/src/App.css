@@ -1,0 +1,133 @@
+/* Basic Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    height: 100%; /* Ensures the full height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f6fc; /* Light blue background for a fresher look */
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Ensure the body is transparent to inherit from html */
+}
+
+/* Navbar styling */
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: #007bff; /* Deep blue to contrast the light background */
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main content area styling */
+.container {
+    flex-grow: 1;
+    padding: 70px 20px;
+    overflow-y: auto;
+    margin-top: 50px; /* Ensure space between content and navbar */
+    margin-bottom: 60px;
+    width: 100%;
+    background-color: #ffffff; /* Bright white background for the content area */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+h1, h2, p {
+    color: #2c3e50; /* Dark blue for better readability */
+    text-align: center;
+}
+
+/* Input and Add button styling */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group > input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-group > button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Stylish green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-group > button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Task list styling */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee; /* Lighter border for less visual weight */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+button.delete-button, .clear-button {
+    background-color: #dc3545; /* Uniform delete button color */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete-button:hover, .clear-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 50px 10px; /* Smaller padding for mobile devices */
+    }
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}

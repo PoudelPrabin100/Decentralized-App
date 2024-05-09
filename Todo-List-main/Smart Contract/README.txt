@@ -1,0 +1,1 @@
+The Smart Contract mentioned here was used to export the ABI for the Todo List DApp. The imported ABI and address can be found in config.js file in in the src folder.
